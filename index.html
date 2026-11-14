@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BETINA SIMO | Computer Science Student</title>
+  <meta name="description" content="Portfolio of a second-year Computer Science student at IUT Douala, focused on web development and AI.">
+  <meta name="theme-color" content="#0F2A43">
+  <meta property="og:title" content="Betina Simo | Computer Science Student">
+  <meta property="og:description" content="Portfolio of a second-year Computer Science student focused on web development and AI.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230F2A43'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='white' font-family='monospace'%3EBS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="skip-link">Skip to content</a>  
+  <header class="site-header">
+    <a href="#home" class="logo">BS</a>
+    <div class="header-right">
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Passer en français">FR</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">&#9790;</button>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Computer Science Student &middot; Web &amp; Data/AI</p>
+      <h1 data-i18n="hero.title">Hi, I'm BETINA SIMO.</h1>
+      <p data-i18n="hero.text">I build reliable web applications and I'm working towards a career as an AI engineer.</p>
+      <a class="btn" href="#projects" data-i18n="hero.projects">Projects</a>
+      <a class="btn btn-outline" href="#contact" data-i18n="hero.contact">Contact</a>
+    </section>
+
+    <section id="about">
+      <h2 data-i18n="about.title">About Me</h2>
+      <p data-i18n="about.p1">I'm a second-year Computer Science student at IUT Douala, Cameroon, passionate about building reliable software. I work with web development (HTML, CSS, JavaScript), Python, SQL and C, and I enjoy turning ideas into working applications.</p>
+      <p data-i18n="about.p2">My long-term goal is to become an AI engineer and pursue a master's degree in artificial intelligence. I'm particularly interested in intelligent systems that solve practical problems and help people.</p>
+      <p data-i18n="about.p3">Since 2025, I have worked as a private tutor, which has taught me to explain complex ideas clearly and adapt to different learners. Outside class, I read about science and keep learning through personal projects.</p>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skills.title">Skills</h2>
+      <h3 data-i18n="skills.web">Web</h3>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <h3 data-i18n="skills.prog">Programming &amp; Data</h3>
+      <ul class="tags"><li>Python</li><li>C</li></ul>
+      <h3 data-i18n="skills.db">Databases</h3>
+      <ul class="tags"><li>SQL</li></ul>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projects.title">Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="filter.all">All</button>
+        <button class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="filter.web">Web</button>
+        <button class="filter-btn" data-filter="data-ai" aria-pressed="false" data-i18n="filter.dataai">Data / AI</button>
+      </div>
+      <div class="cards" id="projects-list"></div>
+    </section>
+
+    <section id="contact">
+      <h2 data-i18n="contact.title">Contact</h2>
+        <form id="contact-form" novalidate>
+            <label for="name" data-i18n="contact.name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="field-error" id="name-error"></p>
+
+            <label for="email" data-i18n="contact.email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="field-error" id="email-error"></p>
+
+            <label for="message" data-i18n="contact.message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="field-error" id="message-error"></p>
+
+            <button type="submit" class="btn" data-i18n="contact.send">Send</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer.rights">&copy; 2026 BETINA SIMO</p>
+  </footer>
+
+</body>
+</html>

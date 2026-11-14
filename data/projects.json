@@ -1,0 +1,32 @@
+[
+  {
+    "id": "portfolio",
+    "title": { "en": "Portfolio Website", "fr": "Site portfolio" },
+    "description": {
+      "en": "This site: a responsive portfolio built with HTML, CSS and JavaScript.",
+      "fr": "Ce site : un portfolio responsive réalisé avec HTML, CSS et JavaScript."
+    },
+    "category": "web",
+    "status": { "en": "In progress", "fr": "En cours" },
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "link": ""
+  },
+  {
+    "id": "data-ai-mini",
+    "title": { "en": "Data/AI mini-project", "fr": "Mini-projet Data/IA" },
+    "description": { "en": "Coming soon.", "fr": "Bientôt disponible." },
+    "category": "data-ai",
+    "status": { "en": "Planned", "fr": "Prévu" },
+    "tags": ["Python"],
+    "link": ""
+  },
+  {
+    "id": "web-app",
+    "title": { "en": "Web application", "fr": "Application web" },
+    "description": { "en": "Coming soon.", "fr": "Bientôt disponible." },
+    "category": "web",
+    "status": { "en": "Planned", "fr": "Prévu" },
+    "tags": [],
+    "link": ""
+  }
+]
